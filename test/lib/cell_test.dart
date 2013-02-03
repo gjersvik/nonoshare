@@ -1,3 +1,5 @@
+library test.lib.cell;
+
 import 'package:unittest/unittest.dart';
 import 'package:nonoshare/nonoshare.dart';
 
