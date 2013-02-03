@@ -1,5 +1,8 @@
 part of nonoshare;
 
-class Cell {
-  static Cell mark = new Cell();
+abstract class Cell {
+  static Cell mark = new MarkedCell();
+}
+
+class MarkedCell extends Cell{
 }
