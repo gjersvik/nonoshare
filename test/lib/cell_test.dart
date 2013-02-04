@@ -8,5 +8,8 @@ main(){
     test('Mark toString returns X',() {
       expect(Cell.mark.toString(),'X');
     });
+    test('Blank toString returns X',() {
+      expect(Cell.blank.toString(),'_');
+    });
   });
 }
