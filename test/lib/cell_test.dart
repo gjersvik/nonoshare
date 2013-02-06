@@ -23,5 +23,8 @@ main(){
     test('new Cell wit argument ? returns empty.', () {
       expect(new Cell('?'), Cell.empty);
     });
+    test('new Cell wit bad argument returns empty.', () {
+      expect(new Cell('sadgarvagfvfd'), Cell.empty);
+    });
   });
 }
