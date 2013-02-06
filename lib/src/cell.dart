@@ -12,6 +12,9 @@ abstract class Cell {
     if(code == '_'){
       return Cell.blank;
     }
+    if(code == '?'){
+      return Cell.empty;
+    }
   }
   
   String toString();
