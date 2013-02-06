@@ -20,5 +20,8 @@ main(){
     test('new Cell wit argument _ returns blank.', () {
       expect(new Cell('_'), Cell.blank);
     });
+    test('new Cell wit argument ? returns empty.', () {
+      expect(new Cell('?'), Cell.empty);
+    });
   });
 }
