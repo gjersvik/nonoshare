@@ -9,6 +9,9 @@ abstract class Cell {
     if(code == 'X'){
       return Cell.mark;
     }
+    if(code == '_'){
+      return Cell.blank;
+    }
   }
   
   String toString();
