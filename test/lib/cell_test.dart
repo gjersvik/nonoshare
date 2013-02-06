@@ -14,5 +14,8 @@ main(){
     test('Empty toString returns ?',() {
       expect(Cell.empty.toString(),'?');
     });
+    test('new Cell wit argument X returns mark.', () {
+      expect(new Cell('X'), Cell.mark);
+    });
   });
 }
