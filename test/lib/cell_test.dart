@@ -17,5 +17,8 @@ main(){
     test('new Cell wit argument X returns mark.', () {
       expect(new Cell('X'), Cell.mark);
     });
+    test('new Cell wit argument _ returns blank.', () {
+      expect(new Cell('_'), Cell.blank);
+    });
   });
 }
