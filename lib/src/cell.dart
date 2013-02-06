@@ -5,17 +5,26 @@ abstract class Cell {
   static final Cell blank = new BlankCell();
   static final Cell empty = new EmptyCell();
   
+  factory Cell(code) {
+    if(code == 'X'){
+      return Cell.mark;
+    }
+  }
+  
   String toString();
 }
 
-class MarkedCell extends Cell{
+class MarkedCell implements Cell{
+  const MarkedCell();
   String toString() => 'X';
 }
 
-class BlankCell extends Cell{
+class BlankCell implements Cell{
+  const BlankCell();
   String toString() => '_';
 }
 
-class EmptyCell extends Cell{
+class EmptyCell implements Cell{
+  const EmptyCell();
   String toString() => '?';
 }
