@@ -10,6 +10,11 @@ main(){
       var grid = new Grid(postive_int,0);
       expect(grid.height,postive_int);
     });
+    test('Width set from constuctor.',() {
+      var postive_int = 10;
+      var grid = new Grid(0,postive_int);
+      expect(grid.width,postive_int);
+    });
   });
 }
 
