@@ -15,6 +15,12 @@ main(){
       var grid = new Grid(0,postive_int);
       expect(grid.width,postive_int);
     });
+    test('Grid suport forin.',() {
+      var grid = new Grid(3,3);
+      for(var cell in grid) {
+        expect(cell,Cell.empty);
+      }
+    });
   });
 }
 
