@@ -3,6 +3,11 @@ part of nonoshare;
 class Grid {
   final height;
   final width;
+  List<Cell> cells;
   
-  const Grid(this.height,this.width);
+  Grid(this.height,this.width){
+    cells = new List.fixedLength(height*width, fill: Cell.empty);
+  }
+  
+  get iterator => cells.iterator;
 }
