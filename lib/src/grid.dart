@@ -9,5 +9,5 @@ class Grid {
     cells = new List.fixedLength(height*width, fill: Cell.empty);
   }
   
-  get iterator => cells.iterator;
+  Iterator<Cell> get iterator => cells.iterator;
 }

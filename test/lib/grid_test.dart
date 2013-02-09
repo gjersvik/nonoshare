@@ -21,6 +21,11 @@ main(){
         expect(cell,Cell.empty);
       }
     });
+    test('set and get cell',() {
+      var grid = new Grid(3,3);
+      grid.cell(1,1,Cell.mark);
+      expect(grid.cell(),Cell.mark);
+    });
   });
 }
 
