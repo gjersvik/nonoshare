@@ -26,6 +26,15 @@ main(){
       grid.cell(1,1,Cell.mark);
       expect(grid.cell(1,1),Cell.mark);
     });
+    test('row return iterator',() {
+      var grid = new Grid(3,3);
+      grid.cell(1,0,Cell.mark);
+      grid.cell(1,1,Cell.mark);
+      grid.cell(1,2,Cell.mark);
+      for(var cell in grid.row(1)) {
+        expect(cell,Cell.mark);
+      }
+    });
   });
 }
 
