@@ -24,7 +24,7 @@ main(){
     test('set and get cell',() {
       var grid = new Grid(3,3);
       grid.cell(1,1,Cell.mark);
-      expect(grid.cell(),Cell.mark);
+      expect(grid.cell(1,1),Cell.mark);
     });
   });
 }
