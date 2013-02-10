@@ -35,6 +35,16 @@ main(){
         expect(cell,Cell.mark);
       }
     });
+
+    test('column return iterator',() {
+      var grid = new Grid(3,3);
+      grid.cell(0,1,Cell.mark);
+      grid.cell(1,1,Cell.mark);
+      grid.cell(2,1,Cell.mark);
+      for(var cell in grid.column(1)) {
+        expect(cell,Cell.mark);
+      }
+    });
   });
 }
 
