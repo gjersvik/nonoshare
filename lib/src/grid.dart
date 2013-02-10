@@ -17,6 +17,8 @@ class Grid {
     return cells[index];
   }
   
-  Iterable<Cell> row(y) => new Iterable.generate(this.width, (x) => this.cell(y, x));
+  Iterable<Cell> row(y) => new Iterable.generate(this.width, (x) => this.cell(y, x));  
+  Iterable<Cell> column(x) => new Iterable.generate(this.height, (y) => this.cell(y, x));
+
   Iterator<Cell> get iterator => cells.iterator;
 }
